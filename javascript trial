@@ -1,0 +1,29 @@
+// function food(answer){
+//   answer = input
+//   console.log(input + "  is my favorite food too!!")
+// }
+//
+// function food(input){
+//   console.log(input + " is my favorite food too!!")
+// }
+
+var roletitle = document.getElementById("role");
+
+
+function changeColor(){
+  role.style.color = "purple"
+}
+function changeBack(){
+  role.style.color = "black"
+}
+
+role.onmouseover = changeColor
+role.onmouseout = changeBack
+
+console.log("title thing" , role)
+
+if ( navigator.platform.indexOf('Win') != -1 ) {
+  window.document.getElementById("wrapper").setAttribute("class", "windows");
+} else if ( navigator.platform.indexOf('Mac') != -1 ) {
+  window.document.getElementById("wrapper").setAttribute("class", "mac");
+}
